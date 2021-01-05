@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+require_relative '../lib/yogascrape/version.rb'
+require_relative '../lib/yogascrape/environment.rb'
+require_relative '../lib/yogascrape/cli.rb'
+require_relative '../lib/yogascrape/scraper.rb'
+
+require_relative '../lib/yogascrape/yogaclass.rb'
+require 'nokogiri'
+require 'open-uri'
+Yogascrape::CLI.new.call
